@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="../materialize/css/materialize.min.css" media="screen,projection" />
+    <!--jQuery-->
+    <script src="../materialize/jquery-3.3.1.js"></script>
+    <!--MiScript-->
+    <script src="../js/addSeccion.js"></script>
+    <!--Autoinit-->
+    <script>
+    $(document).ready(function() {
+        $('.modal').modal();
+    });
+    </script>
+    <title>Registrar Sección</title>
+</head>
+<body>
+<?php
+    include_once('../includes/navbarAdminv2.php');
+?>
+    <div class="container">
+        <div class="row">
+            <div class="col s2">
+            
+            </div>
+            <div class="col s8">
+                <div class="card">
+                    <div class="card-content">
+                    <span class="card-title black-text center">Formulario Secciones</span>
+                    <div class="row">
+                        <form class="col s12">
+                            <div class="input-field">
+                                <input type="text" name="nombre" id="nombre">
+                                <label for="nombre"></label>
+                            </div>
+                            <div class="input-field">
+                                <input type="number" name="cupo" id="cupo">
+                                <label for="cupo"></label>
+                            </div>
+                            
+                        </form>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col s2">
+            
+            </div>
+        </div>
+    </div>
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="../materialize/js/materialize.min.js"></script>
+    <script>
+    M.AutoInit();
+    </script>
+</body>
+</html>
