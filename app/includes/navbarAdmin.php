@@ -8,7 +8,6 @@
 <!-- Dropdown Structure -->
 <ul id="dropdown2" class="dropdown-content">
     <li><a href="../pages/searchAlumno.php">Alumno</a></li>
-    <li><a href="#!">Sección</a></li>
     <li><a href="../pages/searchAsignatura.php">Asignatura</a></li>
     <li><a href="../pages/searchSala.php">Sala</a></li>
 </ul>
@@ -21,6 +20,7 @@
             class="material-icons right">arrow_drop_down</i></a></li>
             <li><a class="dropdown-trigger" href="#!" data-target="dropdown2">Buscar<i
             class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a href="../pages/updateSala.php">Actualizar Sala</a></li>
             <li><a href="../index.php"><i class="material-icons">meeting_room</i></a></li>
         </ul>
     </div>

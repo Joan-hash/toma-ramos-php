@@ -10,8 +10,6 @@
     <link type="text/css" rel="stylesheet" href="../materialize/css/materialize.min.css" media="screen,projection" />
     <!--jQuery-->
     <script src="../materialize/jquery-3.3.1.js"></script>
-    <!--MiScript-->
-    <script src="../js/addSala.js"></script>
     <!--Autoinit-->
     <script>
     $(document).ready(function() {
@@ -20,7 +18,7 @@
     </script>
     <title>Menu Principal</title>
 </head>
-<body>
+<body>    
     <?php
         include_once('../includes/navbarAdmin.php');
     ?>

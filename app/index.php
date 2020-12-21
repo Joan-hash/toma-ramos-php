@@ -51,19 +51,7 @@
                             </div>
                             <br><br><br>
                         </form>
-                        <div class="col s12">
-                            <a class="btn modal-trigger right" href="#modal1" id="registrarAlumno">ENTRAR</a>
-                            <div id="modal1" class="modal">
-                                <div class="modal-content">
-                                    <blockquote id="msg" class="center">
-
-                                    </blockquote>
-                                </div>
-                                <div class="modal-footer">
-                                    <a href="" class="modal-close waves-effect waves-green btn-flat" id="boton"></a>
-                                </div>
-                            </div>
-                        </div>
+                        <button class="btn right" id="loginCoordinador">ENTRAR</button>
                     </div>
                 </div>
             </div>
@@ -82,8 +70,8 @@
                         <br><br>
                         <form>
                             <div class="input-field col s12">
-                                <input id="last_name" type="text" class="validate">
-                                <label for="last_name">Rut </label>
+                                <input id="rut" type="text" class="validate">
+                                <label for="rut">Rut </label>
                                 <span class="helper-text">Con puntos y guión</span>
                             </div>
                             <div class="input-field col s12">

@@ -37,14 +37,55 @@
                         <form class="col s12">
                             <div class="input-field">
                                 <input type="text" name="nombre" id="nombre">
-                                <label for="nombre"></label>
+                                <label for="nombre">Nombre sección</label>
                             </div>
                             <div class="input-field">
                                 <input type="number" name="cupo" id="cupo">
-                                <label for="cupo"></label>
+                                <label for="cupo">Cupo</label>
                             </div>
-                            
+                            <div class="input-field">
+                                <input type="number" name="total" id="total">
+                                <label for="total">Total inscritos</label>
+                            </div>
+                            <?php
+                                require_once('../db/searchGeneral.php');
+                                $asignaturas = buscarAsignaturas();
+                                $salas = buscarSalas();
+                            ?>
+                            <div class="input-field">
+                                <select id="asignaturas">
+                                    <option value="" disbled selected>Asignatura</option>
+                                    <?php
+                                        foreach ($asignaturas as $asignatura) {
+                                            echo "<option value='".$asignatura['idasignatura']."'>".$asignatura['nombre']."</option>";
+                                        }
+                                    ?>
+                                </select>
+                            </div>
+                            <div class="input-field">
+                                <select id="salas">
+                                    <option value="" disabled selected>Sala</option>
+                                    <?php
+                                        foreach ($salas as $sala) {
+                                            echo "<option value='".$sala['idsala']."'>".$sala['nombre']."</option>";
+                                        }
+                                    ?>
+                                </select>
+                            </div>
                         </form>
+                        <div class="col s12">
+                                <a class="btn modal-trigger right" href="#modal1" id="crearSeccion">CREAR</a>
+                                <div id="modal1" class="modal">
+                                    <div class="modal-content">
+                                        <blockquote id="msg" class="center">
+
+                                        </blockquote>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="" class="modal-close waves-effect waves-green btn-flat" id="boton"></a>
+                                    </div>
+                                </div>
+                        </div>
                     </div>
                     </div>
                 </div>
