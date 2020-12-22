@@ -1,3 +1,11 @@
+<?php
+    session_start();
+    if ($_SESSION['usuario'] == "Amittai") {
+        echo "existe";
+    }else{
+        header("Location: ../index.php");
+    }
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -10,6 +18,7 @@
     <link type="text/css" rel="stylesheet" href="../materialize/css/materialize.min.css" media="screen,projection" />
     <!--jQuery-->
     <script src="../materialize/jquery-3.3.1.js"></script>
+    <script src="../js/logouts.js"></script>
     <!--Autoinit-->
     <script>
     $(document).ready(function() {

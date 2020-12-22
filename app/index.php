@@ -12,7 +12,7 @@
     <!--jQuery-->
     <script src="materialize/jquery-3.3.1.js"></script>
     <!--MiScript-->
-    <script src="../js/addAlumno.js"></script>
+    <script src="js/logins.js"></script>
     <!--Autoinit-->
     <script>
     $(document).ready(function() {
@@ -51,7 +51,7 @@
                             </div>
                             <br><br><br>
                         </form>
-                        <button class="btn right" id="loginCoordinador">ENTRAR</button>
+                        <button class="btn right" id="loginC">ENTRAR</button>
                     </div>
                 </div>
             </div>
@@ -80,19 +80,7 @@
                             </div>
                             <br><br><br>
                         </form>
-                        <div class="col s12">
-                            <a class="btn modal-trigger right" href="#modal1" id="registrarAlumno">ENTRAR</a>
-                            <div id="modal1" class="modal">
-                                <div class="modal-content">
-                                    <blockquote id="msg" class="center">
-
-                                    </blockquote>
-                                </div>
-                                <div class="modal-footer">
-                                    <a href="" class="modal-close waves-effect waves-green btn-flat" id="boton"></a>
-                                </div>
-                            </div>
-                        </div>
+                        <button class="btn right" id="loginA">ENTRAR</button>                        
                     </div>
                 </div>
             </div>

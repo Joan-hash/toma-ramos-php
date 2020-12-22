@@ -6,14 +6,14 @@
         $usuario = $_POST['usuario'];
         $clave = $_POST['clave'];
         $clave = md5($clave);
-        $stmt = $conexion -> prepare("SELECT * FROM coordinador WHERE nombre=:nombre AND clave=:clave");
-        $stmt -> bindParam(':nombre', $usuario);
-        $stmt -> bindParam(':clave', $clave);
+        $stmt = $conexion -> prepare("SELECT * FROM alumno WHERE rut=:rut AND clave=:clave");
+        $stmt -> bindParam('rut', $usuario);
+        $stmt -> bindParam('clave', $clave);
         $stmt -> execute();
         $stmt -> setFetchMode(PDO::FETCH_ASSOC);
         $resultado = $stmt -> fetchAll();
         foreach ($resultado as $fila) {
-            $_SESSION['usuario'] = $fila['nombre'];
+            $_SESSION['usuario'] = $fila['rut'];
             echo "exito";
         }
     }elseif ($op == 2) {

@@ -10,6 +10,7 @@
     <link type="text/css" rel="stylesheet" href="../materialize/css/materialize.min.css" media="screen,projection" />
     <!--jQuery-->
     <script src="../materialize/jquery-3.3.1.js"></script>
+    <script src="../js/logouts.js"></script>
     <!--Autoinit-->
     <script>
     $(document).ready(function() {

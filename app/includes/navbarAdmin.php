@@ -21,7 +21,7 @@
             <li><a class="dropdown-trigger" href="#!" data-target="dropdown2">Buscar<i
             class="material-icons right">arrow_drop_down</i></a></li>
             <li><a href="../pages/updateSala.php">Actualizar Sala</a></li>
-            <li><a href="../index.php"><i class="material-icons">meeting_room</i></a></li>
+            <li><a id="cerrarSesionC"><i class="material-icons">meeting_room</i></a></li>
         </ul>
     </div>
 </nav>
