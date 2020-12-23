@@ -1,9 +1,9 @@
 <?php
     session_start();
     if ($_SESSION['usuario'] == "Amittai") {
-        echo "existe";
+
     }else{
-        header("Location: ../index.php");
+        header("Location: notFound.php");
     }
 ?>
 <!DOCTYPE html>

@@ -1,9 +1,9 @@
 <?php
     session_start();
     if ($_SESSION['usuario'] == "Amittai") {
-        echo "existe";
+
     }else{
-        header("Location: ../index.php");
+        header("Location: notFound.php");
     }
 ?>
 <!DOCTYPE html>
@@ -30,7 +30,7 @@
     <title>Buscar Alumno</title>
 </head>
 
-<body>
+<body style="background-color:#F5F5F5">
     <?php
     include_once('../includes/navbarAdminv2.php');
     ?>

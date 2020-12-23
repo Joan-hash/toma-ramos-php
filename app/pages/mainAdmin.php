@@ -1,9 +1,9 @@
 <?php
     session_start();
     if ($_SESSION['usuario'] == "Amittai") {
-        echo "existe";
+
     }else{
-        header("Location: ../index.php");
+        header("Location: notFound.php");
     }
 ?>
 <!DOCTYPE html>
@@ -27,10 +27,35 @@
     </script>
     <title>Menu Principal</title>
 </head>
-<body>    
+<body style="background-color:#F5F5F5">    
     <?php
         include_once('../includes/navbarAdmin.php');
     ?>
+    <br><br><br>
+    <div class="container">
+        <div class="row">
+            <div class="col s2">
+            
+            </div>
+            <div class="col s8">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="../img/welcomeC.png" alt="bienvenido">
+                    </div>
+                    <div class="card-content">
+                        <h4 class="center">Bienvenido!
+                            <?php
+                                echo $_SESSION['usuario'];
+                            ?>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col s2">
+            
+            </div>
+        </div>
+    </div>
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="../materialize/js/materialize.min.js"></script>
 </body>

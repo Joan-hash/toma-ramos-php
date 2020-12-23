@@ -14,6 +14,8 @@
         $resultado = $stmt -> fetchAll();
         foreach ($resultado as $fila) {
             $_SESSION['usuario'] = $fila['rut'];
+            $_SESSION['nombre'] = $fila['nombre'];
+            $_SESSION['apellido'] = $fila['apellido'];
             echo "exito";
         }
     }elseif ($op == 2) {
